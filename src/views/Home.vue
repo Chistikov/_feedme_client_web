@@ -1,8 +1,13 @@
 <template>
   <a-layout class="home">
-    <div class="home__sidebar" width="400">
+    <div class="home__sidebar">
       <div class="home__logo_conainer">
         <div class="home__logo">FEED<span>.ME</span></div>
+      </div>
+      <div class="home__user_block">
+        <UserAvatar class="home__avatar"></UserAvatar>
+        <div class="home__user_name">Rono Donosolono Rono Donosolono</div>
+        <div class="home__dots_button"></div>
       </div>
       <router-link to="/">Home</router-link>
       <br />
@@ -23,14 +28,15 @@
 
 <script>
 // import { Button } from "ant-design-vue";
+import UserAvatar from "@/components/UserAvatar";
 
 export default {
-  name: "Home"
-  // components: { Button },
+  name: "Home",
+  components: { UserAvatar },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home {
   width: 100vw;
   height: 100vh;
@@ -46,6 +52,7 @@ export default {
     background: $gray1;
     display: flex;
     flex-direction: column;
+    padding: 30px;
   }
 
   &__content {
@@ -63,10 +70,33 @@ export default {
   &__logo {
     font-size: 39px;
     font-weight: 700;
+    color: $black1;
 
     > span {
-      color: $lilac1
+      color: $lilac1;
     }
+  }
+
+  &__user_block {
+    background: $white1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    //height: 105px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+  }
+
+  &__avatar {
+    margin-right: 24px;
+    flex-shrink: 0;
+  }
+
+  &__user_name {
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 </style>
