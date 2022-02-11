@@ -28,13 +28,10 @@ export default {
   width: 62px;
   height: 62px;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 
   &__gradient-circel {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 62px;
     height: 62px;
     background: conic-gradient(
@@ -46,6 +43,8 @@ export default {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    animation: spin 2s infinite linear;
+    transform-origin: center;
   }
 
   &__avatar {
@@ -62,6 +61,15 @@ export default {
     background: $white1;
     background-size: cover;
     background-image: url("../assets/smile.svg");
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 </style>
