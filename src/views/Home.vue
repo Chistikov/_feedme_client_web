@@ -1,12 +1,12 @@
 <template>
   <a-layout class="home">
     <div class="home__sidebar">
-      <div class="home__logo_conainer">
+      <div class="home__logo-conainer">
         <div class="home__logo">FEED<span>.ME</span></div>
       </div>
-      <div class="home__user_block">
+      <div class="home__user-block">
         <UserAvatar class="home__avatar"></UserAvatar>
-        <div class="home__user_name">Rono<br />Donosolono</div>
+        <div class="home__user-name">Rono<br />Donosolono</div>
         <div class="home__menu-container">
           <MenuButton></MenuButton>
         </div>
@@ -65,7 +65,7 @@ export default {
     padding-left: 400px;
   }
 
-  &__logo_conainer {
+  &__logo-conainer {
     height: 216px;
     flex-shrink: 0;
     display: flex;
@@ -83,7 +83,7 @@ export default {
     }
   }
 
-  &__user_block {
+  &__user-block {
     background: $white1;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -98,7 +98,7 @@ export default {
     flex-shrink: 0;
   }
 
-  &__user_name {
+  &__user-name {
     flex-grow: 1;
     font-size: 18px;
     line-height: 21px;

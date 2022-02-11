@@ -1,8 +1,8 @@
 <template>
-  <div class="user_avatar">
-    <div class="user_avatar__gradient_circel"></div>
+  <div class="user-avatar">
+    <div class="user-avatar__gradient-circel"></div>
     <div
-      class="user_avatar__avatar"
+      class="user-avatar__avatar"
       :style="{ backgroundImage: getAvatar }"
     ></div>
   </div>
@@ -24,13 +24,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.user_avatar {
+.user-avatar {
   width: 62px;
   height: 62px;
   position: relative;
   overflow: hidden;
 
-  &__gradient_circel {
+  &__gradient-circel {
     position: absolute;
     top: 50%;
     left: 50%;
