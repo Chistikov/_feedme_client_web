@@ -6,6 +6,16 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    children: [
+      {
+        path: "",
+        redirect: { path: '/map' }
+      },
+      {
+        path: 'map',
+        component: import('@/views/MapView.vue')
+      }
+    ]
   },
   {
     path: "/login",
