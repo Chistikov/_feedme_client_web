@@ -6,15 +6,19 @@
       </div>
       <div class="home__user_block">
         <UserAvatar class="home__avatar"></UserAvatar>
-        <div class="home__user_name">Rono Donosolono Rono Donosolono</div>
-        <div class="home__dots_button"></div>
+        <div class="home__user_name">Rono<br />Donosolono</div>
+        <div class="home__menu-container">
+          <MenuButton></MenuButton>
+        </div>
       </div>
-      <router-link to="/">Home</router-link>
-      <br />
-      <router-link to="/register">Register</router-link>
-      <br />
-      <router-link to="/login">Login</router-link>
-      <br />
+      <div class="home__menu">
+        <router-link to="/">Home</router-link>
+        <br />
+        <router-link to="/register">Register</router-link>
+        <br />
+        <router-link to="/login">Login</router-link>
+        <br />
+      </div>
       <a-button>logout</a-button>
     </div>
     <a-layout>
@@ -29,10 +33,11 @@
 <script>
 // import { Button } from "ant-design-vue";
 import UserAvatar from "@/components/UserAvatar";
+import MenuButton from "@/components/MenuButton";
 
 export default {
   name: "Home",
-  components: { UserAvatar },
+  components: { UserAvatar, MenuButton },
 };
 </script>
 
@@ -53,6 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    justify-content: space-between;
   }
 
   &__content {
@@ -82,7 +88,6 @@ export default {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    //height: 105px;
     display: flex;
     align-items: center;
     padding: 22px;
@@ -97,6 +102,14 @@ export default {
     flex-grow: 1;
     font-size: 18px;
     line-height: 21px;
+  }
+
+  &__menu-container {
+    flex-shrink: 0;
+  }
+
+  &__menu {
+    flex-grow: 1;
   }
 }
 </style>
