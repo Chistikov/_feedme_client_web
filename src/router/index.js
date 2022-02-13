@@ -9,13 +9,13 @@ const routes = [
     children: [
       {
         path: "",
-        redirect: { path: '/map' }
+        redirect: { path: "/map" },
       },
       {
-        path: 'map',
-        component: import('@/views/MapView.vue')
-      }
-    ]
+        path: "map",
+        component: import("@/views/MapView.vue"),
+      },
+    ],
   },
   {
     path: "/login",

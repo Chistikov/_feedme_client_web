@@ -31,7 +31,6 @@
     </div>
     <a-layout>
       <a-layout-content class="home__content">
-        Content
         <router-view></router-view>
       </a-layout-content>
     </a-layout>
@@ -43,7 +42,6 @@
 import UserAvatar from "@/components/UserAvatar";
 import MenuButton from "@/components/MenuButton";
 import MapIcon from "@/icon_components/MapIcon";
-
 
 export default {
   name: "Home",
@@ -147,16 +145,20 @@ export default {
     stroke: $gray2;
   }
 
-  .router-link-active{
+  &__content {
+    height: inherit;
+  }
+
+  .router-link-active {
     //color: $lilac1;
     background-color: $lilac1;
-    color:  $white1;
+    color: $white1;
     //border: 1px solid $lilac1;
   }
 
   .router-link-active &__icon {
     margin-right: 20px;
-    stroke: rgba(255,255,255,.6);
+    stroke: rgba(255, 255, 255, 0.6);
   }
 }
 </style>
