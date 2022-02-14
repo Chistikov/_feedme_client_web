@@ -5,7 +5,7 @@
       <DataCard
         class="map-view__data-card map-view__data-card-rating"
       ></DataCard>
-      <div class="map-view__delimiter"></div>
+      <!--      <div class="map-view__delimiter"></div>-->
       <div class="map-view__establishments-card-wrapper">
         <DataCard class="map-view__data-card"></DataCard>
         <DataCard class="map-view__data-card"></DataCard>
@@ -58,7 +58,6 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  height: inherit;
   height: 100vh;
 
   &__map-container {
@@ -126,6 +125,7 @@ export default {
   div &__data-card-rating {
     background: linear-gradient(180deg, $lilac2 0%, $lilac1 100%);
     border-radius: 10px;
+    margin-bottom: 40px;
   }
 }
 </style>

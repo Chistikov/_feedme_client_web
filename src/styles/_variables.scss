@@ -7,3 +7,28 @@ $gray1: #F8F8F8;
 $gray2: #EAEAEA;
 $gray3: #C9C9C9;
 $black1: #333333;
+
+@mixin heading-primary {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+@mixin title-primary {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@mixin text-primary {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@mixin text-secondary {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin caption-primary {
+  font-size: 12px;
+  line-height: 14px;
+}

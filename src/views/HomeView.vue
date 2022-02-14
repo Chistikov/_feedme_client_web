@@ -107,9 +107,8 @@ export default {
   }
 
   &__user-name {
+    @include title-primary;
     flex-grow: 1;
-    font-size: 18px;
-    line-height: 21px;
   }
 
   &__delimiter {
@@ -132,12 +131,13 @@ export default {
     align-items: center;
     color: $black1;
     width: 100%;
-    padding: 13px 21px;
     background: $white1;
     margin-bottom: 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    padding: 11px 21px;
+    @include text-primary;
   }
 
   &__icon {

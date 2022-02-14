@@ -12,5 +12,6 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  @include text-primary
 }
 </style>
